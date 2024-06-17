@@ -18,7 +18,6 @@ io.on('connection', socket => {
             data,
             from: socket.id.slice(6)
         });
-        console.log(data);
     });
 });
 

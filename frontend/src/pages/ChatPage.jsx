@@ -2,14 +2,12 @@
 /* eslint-disable no-unused-vars */
 import { useEffect, useRef, useState } from 'react';
 import io from 'socket.io-client';
-import HeaderComponent from '../shared/components/HeaderComponent';
 import MainContainerComponent from '../shared/components/MainContainer';
-import FooterComponent from '../shared/components/FooterComponent';
 import { Box, Button, Paper, TextField } from '@mui/material';
 import MessageList from '../shared/components/MensajesLista';
 
 // Inicia la comunicación con el backend mediante Socket.IO
-const socket = io('/'); 
+const socket = io('/');
 
 function ChatPage() {
     // Estado para manejar el valor del campo de entrada del mensaje
@@ -60,7 +58,6 @@ function ChatPage() {
 
     return (
         <>
-            <HeaderComponent />
             <MainContainerComponent>
                 <Paper elevation={3} sx={{ flex: 1, padding: 2, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                     <Box sx={{ flex: 1, overflowY: 'auto', maxHeight: '60vh' }}>
@@ -81,7 +78,6 @@ function ChatPage() {
                     </Box>
                 </Paper>
             </MainContainerComponent>
-            <FooterComponent />
         </>
     );
 }

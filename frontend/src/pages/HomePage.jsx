@@ -1,12 +1,9 @@
 import { Typography } from "@mui/material";
-import HeaderComponent from "../shared/components/HeaderComponent";
 import MainContainerComponent from '../shared/components/MainContainer';
-import FooterComponent from "../shared/components/FooterComponent";
 
 function HomePage() {
     return (
         <>
-            <HeaderComponent />
             <MainContainerComponent>
                 <Typography variant="h2" sx={{ textAlign: "center" }}>
                     Bienvenidos a mi portfolio
@@ -19,7 +16,6 @@ function HomePage() {
                     Habilidades
                 </Typography>
             </MainContainerComponent>
-            <FooterComponent />
         </>
     );
 }
