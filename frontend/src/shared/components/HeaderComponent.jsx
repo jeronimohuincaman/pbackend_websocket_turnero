@@ -6,13 +6,16 @@ export const HeaderComponent = () => {
         <AppBar position="static" sx={{backgroundColor: "darkslategray"}}>
             <Toolbar>
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                    Mi portfolio
+                    Integración de aplicaciones
                 </Typography>
                 <Button color="inherit" component={Link} to="/">
                     Inicio
                 </Button>
                 <Button color="inherit" component={Link} to="/chat">
                     Chat
+                </Button>
+                <Button color="inherit" component={Link} to="/turnero">
+                    Turnero
                 </Button>
             </Toolbar>
         </AppBar>

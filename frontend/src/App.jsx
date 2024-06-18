@@ -3,6 +3,7 @@ import { Box } from "@mui/material";
 import ChatPage from "./pages/ChatPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import HomePage from "./pages/HomePage";
+import TurneroPage from "./pages/TurneroPage";
 function App() {
 
   return (
@@ -17,7 +18,7 @@ function App() {
         <Router>
           <Routes>
             <Route exact path="/" Component={HomePage} />
-            {/* <Route exact path="/turnero" Component={AboutPage} /> */}
+            <Route exact path="/turnero" Component={TurneroPage} />
             <Route path="/chat" Component={ChatPage} />
             <Route path="*" Component={NotFoundPage} />
           </Routes>
