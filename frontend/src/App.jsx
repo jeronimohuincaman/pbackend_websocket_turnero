@@ -4,6 +4,7 @@ import ChatPage from "./pages/ChatPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import HomePage from "./pages/HomePage";
 import TurneroPage from "./pages/TurneroPage";
+import TeoriaPage from "./pages/TeoriaPage";
 function App() {
 
   return (
@@ -18,6 +19,7 @@ function App() {
         <Router>
           <Routes>
             <Route exact path="/" Component={HomePage} />
+            <Route exact path="/teoria" Component={TeoriaPage} />
             <Route exact path="/turnero" Component={TurneroPage} />
             <Route path="/chat" Component={ChatPage} />
             <Route path="*" Component={NotFoundPage} />

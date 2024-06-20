@@ -11,6 +11,9 @@ export const HeaderComponent = () => {
                 <Button color="inherit" component={Link} to="/">
                     Inicio
                 </Button>
+                <Button color="inherit" component={Link} to="/teoria">
+                    Teoría
+                </Button>
                 <Button color="inherit" component={Link} to="/chat">
                     Chat
                 </Button>
