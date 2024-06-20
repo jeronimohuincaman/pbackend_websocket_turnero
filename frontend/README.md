@@ -1,8 +1,30 @@
-# React + Vite
+# Chat + Turnero
+## Integracion de aplicaciones
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Guia para poder utilizar el sistema
 
-Currently, two official plugins are available:
+```bash
+    git clone https://github.com/jeronimohuincaman/pbackend_websocket_turnero.git
+```
+```bash
+    cd pbackend_websocket_turnero
+    npm install
+```
+```bash
+    cd frontend
+    npm install
+    cd ..
+```
+```bash
+    npm run start:back
+```
+#### En nueva terminal
+```bash
+    npm run start:front
+    h + enter
+    o + enter
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Posibles errores
+1. Si se quiere conectar con varios clientes al 'turnero' o al 'chat' se debe refrescar la pagina en ambas pestañas al mismo tiempo para tener una sincronizacion de los datos.
+2. Cuando se navega de diferentes pestañas al 'turnero' se debe refrescar la pestaña para que carguen los turnos.
